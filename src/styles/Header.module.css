@@ -1,0 +1,62 @@
+.nav{
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav form{
+    display: flex;
+    align-items: center;
+}
+
+.nav form input[type=text]{
+    padding: .7rem 1rem;
+    border-radius: .25rem;
+    border: none;
+
+}
+
+
+.logo{
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.lupa{
+    background-color:#6654da;
+    border: none;
+    margin-left: .5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding: 0 .25rem;
+    transition: .5s;
+}
+
+.lupa:hover{
+    background-color: #9384f3;
+}
+
+.lupa img{
+    max-width: 2.150rem;
+  
+}
+
+@media (max-width: 500px){
+
+    .nav{
+        padding: .9rem .7rem;
+    }
+
+    .logo{
+        max-width: 90%;
+    }
+
+    .nav form input[type=text]{
+        padding: .3rem .6rem;
+    }
+    .lupa img{
+        max-width: 1.5rem;
+    }
+}

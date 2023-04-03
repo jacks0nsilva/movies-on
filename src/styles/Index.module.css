@@ -1,0 +1,73 @@
+
+
+.main h1{
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+    margin-top: 30px;
+}
+
+.section{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.moviesList{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 2rem;
+    column-gap: 3rem;
+}
+
+.moviesList li{
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    justify-self: center;
+    align-items: center;
+}
+
+.moviesList li p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.star::before{
+    content: url(../img/star.svg);
+    color: #6654da;
+    margin-right: 5px;
+}
+
+.imagem{
+    max-width: 300px;
+    padding: 1rem;
+    align-self: center;
+}
+
+.button{
+    align-self: center;
+
+}
+
+.button button{
+    padding: .7rem 3rem;
+    border: none;
+    background:#6654da;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:  rgb(29, 28, 28);
+    cursor: pointer;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    transition: .4s;
+}
+
+.button button:hover{
+    color: #6654da;
+    background-color: rgb(29, 28, 28);
+    border: 1px solid #6654da;
+}
