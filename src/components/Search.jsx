@@ -19,9 +19,10 @@ function Search() {
       const response = await fetch(`${URL}${APIKey}&language=pt-BR&query=${query}&page=1&include_adult=false`)
       const json = await response.json()
       setMovies(json.results)
+      setLoading(false)
     }
     initMovies()
-    setLoading(false)
+
   },[query])
 
   if (loading) return <Loading/>

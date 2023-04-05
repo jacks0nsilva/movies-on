@@ -22,9 +22,9 @@ function Index() {
 
   },[])
 
-  if(movies.length > 0)
   if (loading) return <Loading/>
-  console.log(movies)
+  if(movies.length > 0)
+
   return (
     <main className={styles.main + ' animeLeft'}>
       <h1>Filmes Populares:</h1>

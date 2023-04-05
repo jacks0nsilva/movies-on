@@ -33,8 +33,9 @@ function Details() {
       detailsMovie()
     },[id])    
     
-    if (movie.length > 0)
     if (loading) return <Loading/>
+    if (movie !== undefined)
+
 
 
   return (
