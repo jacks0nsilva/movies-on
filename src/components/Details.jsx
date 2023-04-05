@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { APIKey } from '../config/Key'
 import styles from '../styles/Details.module.css'
 import Loading from './Loading'
+import Title from './Title'
 
 function Details() {
     const {id} = useParams()
@@ -55,6 +56,7 @@ function Details() {
               </div>
             </div>
         </section>
+        <Title title={`Movies On | Details`} description={`Exibindo detalhes de: ${movie.titulo}`}/>
     </main>
   )
 }

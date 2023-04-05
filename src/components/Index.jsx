@@ -3,6 +3,7 @@ import { APIKey } from '../config/Key'
 import { Link } from 'react-router-dom'
 import styles from '../styles/Index.module.css'
 import Loading from './Loading'
+import Title from './Title'
 
 function Index() {
 
@@ -43,6 +44,7 @@ function Index() {
         })}
         </ul>
       </section>
+      <Title title={`Movies On | Inicio`} description={`Página inicial do Movies On`}/>
     </main>
   )
 }

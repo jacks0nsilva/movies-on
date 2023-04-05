@@ -3,6 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom'
 import { APIKey } from '../config/Key';
 import styles from '../styles/Search.module.css'
 import Loading from './Loading';
+import Title from './Title';
 
 function Search() {
 
@@ -46,6 +47,7 @@ function Search() {
         })}
         </ul>
       </section>
+      <Title title={`Movies On | Search`} description={`Resultados de busca de: ${query}`}/>
     </main>
   )
 }
