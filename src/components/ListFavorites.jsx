@@ -4,6 +4,7 @@ import { MovieContext, useFavoriteContext } from './FavoritesMovies'
 import heartNegative from '../img/heart-positive.svg'
 import heartPositive from '../img/heart-negative.svg'
 import { Link } from 'react-router-dom';
+import Title from './Title';
 
 
 const ListFavorites = () => {
@@ -31,6 +32,7 @@ const ListFavorites = () => {
         })}
         </ul>
       </section>
+      <Title title={`Movies On | Favoritos`} description={`Lista de filmes favoritos`}/>
     </main>
   )
 }
