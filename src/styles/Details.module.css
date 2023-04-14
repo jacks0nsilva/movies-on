@@ -27,6 +27,7 @@
 
 .descricao p{
     margin-bottom: .7rem;
+    text-align: justify;
 }
 
 .descricao button{
@@ -72,78 +73,28 @@
     align-content: center;
 }
 
-.sinopse{
+.icons{
     font-size: 1.1rem;
     position: relative;
     color: #6654da;
+    display: flex;
+    align-items: center;
+    margin-bottom: .2rem;
 }
 
-.sinopse::before{
-    content: url('../img/arquivo.svg');
-    position: absolute;
-    left: -25px;
-    bottom: -10px;
-}
-
-.receita{
-    color: #6654da;
-    font-size: 1.1rem;
-    position: relative;
-}
-
-.receita::before{
-    content: url('../img/carteira.svg');
-    position: absolute;
-    left: -25px;
-    bottom: -2px;
-}
-
-.lancamento{
-    font-size: 1.1rem;
-    position: relative;
-    color: #6654da;
-}
-
-.lancamento::before{
-    content: url('../img/calendario.svg');
-    position: absolute;
-    left: -25px;
-    bottom: -4px;
-}
-
-.tempo{
-    font-size: 1.1rem;
-    position: relative;
-    color: #6654da;
-}
-
-.tempo::before{
-    content: url('../img/tempo.svg');
-    position: absolute;
-    left: -25px;
-    bottom: -5px;
-}
-
-.orcamento{
-    font-size: 1.1rem;
-    position: relative;
-    color: #6654da;
-}
-
-.orcamento::before{
-    content: url('../img/orcamento.svg');
-    position: absolute;
-    left: -25px;
-    bottom: -5px;
+.icons svg{
+    margin-right: .2rem;
 }
 
 @media (max-width: 600px){
     .descricao a{
-        padding: .7rem 1rem;
+        padding: .7rem .7rem;
         text-align: center;
+        font-size: 1rem;
     }
 
     .descricao button{
-        padding: .7rem 2rem;
+        padding: .7rem 1.4rem;
+        font-size: 1rem;
     }
 }
