@@ -7,7 +7,7 @@ Na página inicial, apresenta uma lista de filmes mais populares atualmente.  Ao
 
 Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o usuário digitou.
 
-É possível adicionar o filme a uma lista de favoritos, basta clica no coração no lado direito superior do card.
+É possível adicionar o filme a uma lista de favoritos, basta clica no coração no lado direito superior do card. A lista ficará salva no seu navegador, se a página for recarregada os filmes não serão removidos.
 
 ## Tecnlogias utilizadas
 
