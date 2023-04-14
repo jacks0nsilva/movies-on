@@ -2,16 +2,15 @@
     padding-top: 100px;
 }
 
-.main h1{
+.title{
     text-align: center;
     color: white;
     font-size: 2.7rem;
+    margin-top: 30px;
 }
-
 .section{
     max-width: 1000px;
     margin: 20px auto;
-
 }
 
 .moviesList{

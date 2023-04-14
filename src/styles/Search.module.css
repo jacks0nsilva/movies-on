@@ -1,3 +1,6 @@
+.main{
+    padding-top: 100px;
+}
 
 .main h1{
     text-align: center;
@@ -30,6 +33,7 @@
     justify-self: center;
     align-items: center;
     max-width: min-content;
+    position: relative;
 }
 
 .moviesList li p{
@@ -73,6 +77,13 @@
     color: #6654da;
     background-color: rgb(29, 28, 28);
     border: 1px solid #6654da;
+}
+
+.heart{
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -8px;
 }
 
 @media (max-width: 600px){

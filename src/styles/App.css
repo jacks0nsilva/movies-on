@@ -11,6 +11,7 @@ body{
     background: #000000;
 }
 
+
 .animeLeft{
     transform: translateX(-20px);
     opacity: 0;

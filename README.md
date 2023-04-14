@@ -7,6 +7,8 @@ Na página inicial, apresenta uma lista de filmes mais populares atualmente.  Ao
 
 Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o usuário digitou.
 
+É possível adicionar o filme a uma lista de favoritos, basta clica no coração no lado direito superior do card.
+
 ## Tecnlogias utilizadas
 
 - React
@@ -15,4 +17,8 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 
 ## Implementações Futuras
 
-- Lista de filmes favoritos do usuário
+- Reformulação do layout do site
+- Página com séries populares
+- Página com  lista de séries e filmes favoritos
+- Modal para verificar se o usuário quer mesmo remover o filme/série da lista de favoritos
+

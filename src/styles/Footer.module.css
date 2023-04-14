@@ -1,0 +1,18 @@
+.footer{
+    height: 6rem;
+    background-color: rgb(29, 28, 28);
+    margin-top: 4rem;
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.7rem .7rem 0rem .7rem;
+}
+
+.link{
+    text-decoration: underline;
+    color: currentColor;
+    
+}
