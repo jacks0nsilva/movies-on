@@ -6,7 +6,7 @@
 
 .footer p{
     text-align: center;
-    color: white;
+    color: #dad3d3;
     font-size: 1.4rem;
     padding: 1.7rem .7rem 0rem .7rem;
 }
@@ -15,4 +15,10 @@
     text-decoration: underline;
     color: currentColor;
     
+}
+
+@media (max-width: 500px){
+    .footer p{
+        font-size: 1.25rem;
+    }
 }
