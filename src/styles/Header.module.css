@@ -46,6 +46,21 @@
   
 }
 
+.heartContainer{
+    position: relative;
+}
+
+
+
+.favCount{
+    color: #eee;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 @media (max-width: 500px){
 
     .nav{
@@ -62,5 +77,21 @@
     }
     .lupa img{
         max-width: 1.5rem;
+    }
+
+    .heartContainer{
+        position: relative;
+    }
+
+    .heartContainer svg{
+        width: 32px;
+        height: 32px;
+    }
+
+    .favCount{
+        position: absolute;
+        font-size: .9rem;
+        top: 7px;
+        left: 12px;
     }
 }
