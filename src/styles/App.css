@@ -46,3 +46,11 @@ body{
         transform: rotate(360deg);
     }
 }
+
+.pulseHeart{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	10% {transform: scale(1.5)}
+}

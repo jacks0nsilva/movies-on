@@ -55,10 +55,11 @@
 .favCount{
     color: #eee;
     position: absolute;
-    left: 20px;
-    top: 15px;
     font-weight: bold;
     cursor: pointer;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 500px){
@@ -84,14 +85,11 @@
     }
 
     .heartContainer svg{
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
     }
 
     .favCount{
-        position: absolute;
         font-size: .9rem;
-        top: 7px;
-        left: 12px;
     }
 }
