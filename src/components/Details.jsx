@@ -42,24 +42,60 @@ function Details() {
     if (loading) return <Loading/>
     if (movie !== undefined)
 
-
-
   return (
     <main className={styles.main + ' animeLeft'}>
         <section className={styles.section}>
-          <img src={movie.imagem} alt={movie.titulo} className={styles.imagem} />
-            <div className={styles.descricao}>
-              <h1 className={styles.titulo}>{movie.titulo}</h1>
-              <p><span className={styles.icons}><Sinopse/>Sinopse:</span> {movie.sinopse}</p>
-              <p><span className={styles.icons}><Calendario/>Data de lançamento:</span> {movie.dataLancamento}</p>
-              <p><span className={styles.icons}><Tempo/>Duração:</span> {movie.duracao} minutos</p>
-              <p><span className={styles.icons}><Orcamento/>Orçamento:</span> ${movie.orcamento + ',00'}</p>
-              <p><span className={styles.icons}><Receita/>Receita:</span> ${movie.receita + ',00'}</p>
-              <div className={styles.links}>
-                <a href={`https://www.youtube.com/results?search_query=${movie.titulo} trailer`} target='_blank'>Assista o trailer</a>
-                <button onClick={()=> history.back()}>Voltar</button>
-              </div>
+          <img 
+            src={movie.imagem} 
+            alt={movie.titulo} 
+            className={styles.imagem} 
+          />
+          <div className={styles.descricao}>
+            <h1 className={styles.titulo}>
+              {movie.titulo}
+            </h1>
+            <p>
+              <span className={styles.icons}>
+                <Sinopse/>Sinopse:
+              </span> 
+              {movie.sinopse}
+            </p>
+            <p>
+              <span className={styles.icons}>
+                <Calendario/>Data de lançamento:
+              </span> 
+              {movie.dataLancamento}
+            </p>
+            <p>
+              <span className={styles.icons}>
+                <Tempo/>Duração:
+              </span> 
+              {movie.duracao} minutos
+            </p>
+            <p>
+              <span className={styles.icons}>
+                <Orcamento/>Orçamento:
+              </span> 
+              ${movie.orcamento + ',00'}
+            </p>
+            <p>
+              <span className={styles.icons}>
+                <Receita/>Receita:
+              </span> 
+              ${movie.receita + ',00'}
+            </p>
+            <div className={styles.links}>
+              <a 
+                href={`https://www.youtube.com/results?search_query=${movie.titulo} trailer`} 
+                target='_blank'
+              >
+                Assista o trailer
+              </a>
+              <button onClick={()=> history.back()}>
+                Voltar
+              </button>
             </div>
+          </div>
         </section>
         <Title title={`Movies On | Details`} description={`Exibindo detalhes de: ${movie.titulo}`}/>
     </main>

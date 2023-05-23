@@ -35,17 +35,30 @@ function Header() {
 
   return (
     <nav className={styles.nav}>
-        <Link to="/"><img src={logo} alt="Logo" className={styles.logo} /></Link>
+        <Link to="/">
+          <img 
+            src={logo} 
+            alt="Logo" 
+            className={styles.logo}
+          />
+        </Link>
         <Link to='/favoritos'>
         <div id='coracao' className={styles.heartContainer}>
           <Heart/>
-          <span className={styles.favCount}>{favorito.length}</span>
+          <span className={styles.favCount}>
+            {favorito.length}
+          </span>
         </div>
         </Link>
         <form onSubmit={searchMovies}>
-            <input type="text" placeholder='Busque um filme'onChange={(e)=> setSearchKey(e.target.value)}  value={searchKey}/>
+            <input 
+              type="text" 
+              placeholder='Busque um filme'
+              onChange={(e)=> setSearchKey(e.target.value)}  
+              value={searchKey}
+            />
             <button type="submit" className={styles.lupa}>
-              <img src={lupa} alt="lupa"  />
+              <img src={lupa} alt="lupa"/>
             </button>
         </form>
     </nav>

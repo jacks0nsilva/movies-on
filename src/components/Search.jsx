@@ -30,7 +30,6 @@ function Search() {
       setLoading(false)
     }
     initMovies()
-
   },[query])
 
   if (loading) return <Loading/>
@@ -42,19 +41,34 @@ function Search() {
 
       <section className={styles.section + ' animeLeft'}>
         <ul  className={styles.moviesList}>
-        {movies.map((movie)=>{
-          const isFavorite = favorito.some((fav) => fav.id === movie.id);
-          const heart = !isFavorite ? heartPositive : heartNegative
-          return(
-            <li key={movie.id}>
-              <img src={image_path + movie.poster_path} alt={movie.title}  className={styles.imagem}/>
-              <p>{movie.title}</p>
-              <p className={styles.star}>{movie.vote_average.toFixed(1)}</p>
-              <Link className={styles.button} to={`/details/${movie.id}`}><button>Detalhes</button></Link>
-              <img src={heart} onClick={()=> adicionarFavorito(movie) } alt="heart" className={styles.heart} />
-            </li>
-          )
-        })}
+          {movies.map((movie)=>{
+            const isFavorite = favorito.some((fav) => fav.id === movie.id);
+            const heart = !isFavorite ? heartPositive : heartNegative
+            return(
+              <li key={movie.id}>
+                <img 
+                  src={image_path + movie.poster_path} 
+                  alt={movie.title}  
+                  className={styles.imagem}
+                />
+                <p>
+                  {movie.title}
+                </p>
+                <p className={styles.star}>
+                  {movie.vote_average.toFixed(1)}
+                </p>
+                <Link className={styles.button} to={`/details/${movie.id}`}>
+                  <button>Detalhes</button>
+                </Link>
+                <img 
+                  src={heart} 
+                  onClick={()=> adicionarFavorito(movie) } 
+                  alt="heart" 
+                  className={styles.heart} 
+                />
+              </li>
+            )
+          })}
         </ul>
       </section>
       <Title title={`Movies On | Search`} description={`Resultados de busca de: ${query}`}/>
