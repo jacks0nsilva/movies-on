@@ -1,14 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../styles/Index.module.css'
-import Loading from './Loading'
 import Title from './Title'
 import { MovieContext, useFavoriteContext } from './FavoritesMovies'
 import heartNegative from '../img/heart-positive.svg'
 import heartPositive from '../img/heart-negative.svg'
-import useFetch from '../Hooks/useFetch'
+import useFetch from '../hooks/useFetch'
 import { POPULAR_MOVIES } from '../config/Api'
-import InfiteScroll from '../Hooks/InfiteScroll'
+import InfiteScroll from '../hooks/InfiteScroll'
 
 function Index() {
 
