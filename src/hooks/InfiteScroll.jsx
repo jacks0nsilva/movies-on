@@ -17,7 +17,8 @@ const InfiteScroll = ({callback}) => {
         }
       },[myref])
   return (
-    <div ref={myref}></div>
+    <div ref={myref}>
+    </div>
   )
 }
 

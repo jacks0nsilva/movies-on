@@ -24,7 +24,7 @@ function Index() {
   React.useEffect(()=>{
     async function initMovies(){
       const {url, options} = POPULAR_MOVIES(pagina)
-      const {response, json} = await request(url, options)
+      const {json} = await request(url, options)
       setMovies([...movies, ...json.results])
     }
     initMovies()
