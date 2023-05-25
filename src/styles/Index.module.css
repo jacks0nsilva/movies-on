@@ -11,7 +11,8 @@
 .section{
     max-width: 1000px;
     margin: 20px auto;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .moviesList{
@@ -71,6 +72,27 @@
 }
 
 .button button:hover{
+    color: #6654da;
+    background-color: rgb(29, 28, 28);
+    border: 1px solid #6654da;
+}
+
+.moreMovies{
+    align-self: center;
+    padding: .7rem 1rem;
+    border: none;
+    background:#6654da;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:  rgb(29, 28, 28);
+    cursor: pointer;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    transition: .4s;
+    margin-top: 2rem;
+}
+
+.moreMovies:hover{
     color: #6654da;
     background-color: rgb(29, 28, 28);
     border: 1px solid #6654da;

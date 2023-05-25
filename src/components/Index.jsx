@@ -7,7 +7,7 @@ import heartNegative from '../img/heart-positive.svg'
 import heartPositive from '../img/heart-negative.svg'
 import useFetch from '../hooks/useFetch'
 import { POPULAR_MOVIES } from '../config/Api'
-import InfiteScroll from '../hooks/InfiteScroll'
+
 
 function Index() {
 
@@ -16,9 +16,8 @@ function Index() {
   const image_path = 'https://image.tmdb.org/t/p/w500'
   const {favorito} = React.useContext(MovieContext)
   const {adicionarFavorito} = useFavoriteContext()
-  const [pagina, setPagina] = React.useState(0)
+  const [pagina, setPagina] = React.useState(1)
   
-
 
   React.useEffect(()=>{
     async function initMovies(){
@@ -67,7 +66,13 @@ function Index() {
             )
           })}
         </ul>
-        <InfiteScroll callback={()=> setPagina((previous)=> previous + 1)}/>
+          <button
+            className={styles.moreMovies} 
+            onClick={()=> setPagina((previous)=> previous+1)}
+          >
+            Carregar mais filmes
+          </button>
+        {/* <InfiteScroll callback={()=> setPagina((previous)=> previous + 1)} page={pagina}/> */}
       </section>
       <Title title={`Movies On | Inicio`} description={`Página inicial do Movies On`}/>
     </main>

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const InfiteScroll = ({callback}) => {
+const InfiteScroll = ({callback, page}) => {
     const myref = React.useRef()
     React.useEffect(()=>{
         const Observer = new IntersectionObserver(([entry])=>{
           const ratio = entry.intersectionRatio;
-          if (ratio > 0){
+          if (ratio > 0 && page < 4){
               callback()
           }
         });
@@ -15,7 +15,7 @@ const InfiteScroll = ({callback}) => {
         return ()=>{
           Observer.disconnect();
         }
-      },[myref])
+      },[myref, page])
   return (
     <div ref={myref}>
     </div>
