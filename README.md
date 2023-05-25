@@ -18,7 +18,7 @@ Também há caixa de pesquisa que retorna uma lista de filmes, com base no que o
 ## Implementações Futuras
 
 - Reformulação do layout do site
+- Refatoração de JavaScript para TypeScript
 - Página com séries populares
 - Página com  lista de séries e filmes favoritos
 - Modal para verificar se o usuário quer mesmo remover o filme/série da lista de favoritos
-
